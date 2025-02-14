@@ -1,7 +1,8 @@
 {
   "name": "@euroland/shadcn-ui-styleguide",
+  "version": "0.0.1",
   "scripts": {
-    "start": "webpack serve",
+    "start": "webpack serve --port 8400",
     "start:standalone": "webpack serve --env standalone",
     "build": "concurrently pnpm:build:*",
     "build:webpack": "webpack --mode=production",
@@ -60,13 +61,18 @@
     "@types/webpack-env": "^1.16.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
     "lucide-react": "^0.475.0",
     "react": "^19.0.0",
+    "react-day-picker": "8.10.1",
     "react-dom": "^19.0.0",
     "single-spa": "^5.9.3",
     "single-spa-react": "^6.0.2",
     "tailwind-merge": "^3.0.1",
     "tailwindcss-animate": "^1.0.7"
   },
-  "types": "dist/euroland-shadcn-ui-styleguide.d.ts"
+  "types": "./dist/euroland-shadcn-ui-styleguide.d.ts",
+  "files": [
+    "dist/"
+  ]
 }
